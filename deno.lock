@@ -1,0 +1,35 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@supabase/supabase-js@2": "2.118.0"
+  },
+  "jsr": {
+    "@supabase/supabase-js@2.118.0": {
+      "integrity": "42009f9d5b35997f35bba560d509f42608057cae647bd5a25b9b4a06ec3ffad0"
+    }
+  },
+  "workspace": {
+    "packageJson": {
+      "dependencies": [
+        "npm:@eslint/js@^10.0.1",
+        "npm:@supabase/supabase-js@^2.118.0",
+        "npm:@types/node@^24.19.2",
+        "npm:@types/react-dom@^19.3.0",
+        "npm:@types/react@^19.3.0",
+        "npm:@vitejs/plugin-react@^6.1.2",
+        "npm:eslint-plugin-react-hooks@^7.1.1",
+        "npm:eslint-plugin-react-refresh@~0.5.7",
+        "npm:eslint@^10.13.0",
+        "npm:globals@^17.13.0",
+        "npm:lucide-react@^1.61.0",
+        "npm:react-dom@^19.3.1",
+        "npm:react-router-dom@^7.18.4",
+        "npm:react@^19.3.1",
+        "npm:supabase@^2.121.0",
+        "npm:typescript-eslint@^8.71.2",
+        "npm:typescript@~6.0.3",
+        "npm:vite@^8.3.4"
+      ]
+    }
+  }
+}
