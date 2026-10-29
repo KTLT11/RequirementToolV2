@@ -1,0 +1,608 @@
+[
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-01",
+    "question_text": "Quy trình cần tìm hiểu bắt đầu từ sự kiện nào và kết thúc khi nào?",
+    "required_information": "Process boundary, start/end trigger."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-02",
+    "question_text": "Đầu vào và kết quả đầu ra của quy trình là gì?",
+    "required_information": "Process input/output."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-03",
+    "question_text": "Những actor hoặc bộ phận nào tham gia vào quy trình?",
+    "required_information": "Process actors."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-04",
+    "question_text": "Sau khi quy trình bắt đầu, các bước hiện tại diễn ra theo thứ tự nào?",
+    "required_information": "Current process steps."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-05",
+    "question_text": "Ai thực hiện từng bước và sử dụng thông tin gì?",
+    "required_information": "Step owner, input/output."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-06",
+    "question_text": "Điều kiện nào quyết định việc chuyển từ bước này sang bước tiếp theo?",
+    "required_information": "Transition conditions."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-07",
+    "question_text": "Vấn đề đã xác định trong Core Discovery xuất hiện hoặc thể hiện tại bước nào của quy trình hiện tại?",
+    "required_information": "Problem-to-process-step mapping."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-08",
+    "question_text": "Những bước nào cần giữ nguyên, bổ sung, thay đổi hoặc loại bỏ?",
+    "required_information": "Process changes."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-09",
+    "question_text": "Quy trình mong muốn sẽ diễn ra theo thứ tự nào?",
+    "required_information": "Target process flow."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-10",
+    "question_text": "Ai hoặc hệ thống nào chịu trách nhiệm thực hiện từng bước?",
+    "required_information": "Target step owner."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-11",
+    "question_text": "Mỗi bước cần nhận thông tin gì và tạo ra kết quả gì?",
+    "required_information": "Target step input/output."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-12",
+    "question_text": "Điều kiện nào xác định một bước đã hoàn thành và có thể chuyển tiếp?",
+    "required_information": "Completion/transition conditions."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-12A",
+    "question_text": "Sau bước này, đối tượng nghiệp vụ có thay đổi trạng thái không? Nếu có, trạng thái mới là gì?",
+    "required_information": "Business object state change."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-13",
+    "question_text": "Tại những bước nào quy trình có thể rẽ sang nhiều hướng xử lý?",
+    "required_information": "Decision points."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-14",
+    "question_text": "Điều kiện nào dẫn đến từng nhánh và kết quả của mỗi nhánh là gì?",
+    "required_information": "Branch conditions/outcomes."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-15",
+    "question_text": "Có tình huống nào khiến quy trình phải quay lại bước trước, tạm dừng hoặc kết thúc sớm không?",
+    "required_information": "Alternative flows."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-16",
+    "question_text": "Bước nào phụ thuộc vào hệ thống, bộ phận hoặc quy trình khác?",
+    "required_information": "Process dependencies."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-17",
+    "question_text": "Nếu một bước phụ thuộc chưa hoàn thành, quy trình cần xử lý như thế nào?",
+    "required_information": "Dependency behavior."
+  },
+  {
+    "module_code": "PROC",
+    "question_id": "PROC-Q-18",
+    "question_text": "Quy trình mong muốn đã bao phủ các bước và nhánh xử lý trong phạm vi chưa? Có nội dung nào cần xác nhận thêm không?",
+    "required_information": "Process validation results."
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-01",
+    "question_text": "Integration này phục vụ bước hoặc hành vi nghiệp vụ nào?",
+    "required_information": "Integration purpose/context"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-02",
+    "question_text": "Những hệ thống nào tham gia? Hệ thống nào gửi và hệ thống nào nhận?",
+    "required_information": "Source / target system"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-03",
+    "question_text": "Interaction bắt đầu và kết thúc ở đâu trong phạm vi requirement?",
+    "required_information": "Integration boundary"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-04",
+    "question_text": "Điều gì làm integration bắt đầu?",
+    "required_information": "Integration trigger"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-05",
+    "question_text": "Integration xảy ra ngay khi event xảy ra hay vào thời điểm khác?",
+    "required_information": "Interaction timing"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-06",
+    "question_text": "Có điều kiện nào quyết định integration có được thực hiện hay không?",
+    "required_information": "Invocation condition"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-07",
+    "question_text": "Hệ thống cần gửi hoặc nhận những thông tin gì?",
+    "required_information": "Data exchanged"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-08",
+    "question_text": "Dữ liệu được lấy từ đâu và kết quả được sử dụng ở đâu?",
+    "required_information": "Data source / usage"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-09",
+    "question_text": "Có validation hoặc mapping nào cần áp dụng cho dữ liệu không?",
+    "required_information": "Data validation / mapping"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-10",
+    "question_text": "Kết quả nào được xem là integration thành công?",
+    "required_information": "Success outcome"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-11",
+    "question_text": "Sau khi nhận kết quả, hệ thống hoặc process cần làm gì tiếp theo?",
+    "required_information": "Result handling"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-12",
+    "question_text": "Có response hoặc trạng thái nào cần được ghi nhận không?",
+    "required_information": "Response / state"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-13",
+    "question_text": "Nếu hệ thống không nhận được response hoặc integration thất bại thì cần xử lý thế nào?",
+    "required_information": "Failure behavior"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-14",
+    "question_text": "Có trường hợp cần retry, chờ xử lý hoặc chuyển sang luồng khác không?",
+    "required_information": "Retry / alternative behavior"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-15",
+    "question_text": "Integration phụ thuộc vào hệ thống, service hoặc team nào khác không?",
+    "required_information": "Integration dependency"
+  },
+  {
+    "module_code": "INT",
+    "question_id": "INT-Q-16",
+    "question_text": "Có điểm nào chưa được xác nhận hoặc cần stakeholder khác quyết định không?",
+    "required_information": "Open issues"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-01",
+    "question_text": "Rule này áp dụng cho behavior hoặc tình huống nào?",
+    "required_information": "Rule context"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-02",
+    "question_text": "Rule áp dụng cho đối tượng, actor hoặc phạm vi nào?",
+    "required_information": "Rule scope"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-03",
+    "question_text": "Điều kiện nào khiến rule được áp dụng?",
+    "required_information": "Applicability condition"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-04",
+    "question_text": "Nếu điều kiện này xảy ra thì hệ thống cần xử lý thế nào?",
+    "required_information": "Rule action / outcome"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-05",
+    "question_text": "Rule dựa trên những dữ liệu hoặc giá trị nào?",
+    "required_information": "Rule inputs"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-06",
+    "question_text": "Có threshold, range, status hoặc category cụ thể nào không?",
+    "required_information": "Rule criteria"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-07",
+    "question_text": "Có rule nào khác cùng ảnh hưởng đến behavior này không?",
+    "required_information": "Related rules"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-08",
+    "question_text": "Nếu nhiều rule cùng áp dụng thì rule nào được ưu tiên hoặc xử lý trước?",
+    "required_information": "Rule priority"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-09",
+    "question_text": "Có trường hợp các rule cho kết quả khác nhau hoặc conflict không?",
+    "required_information": "Rule conflict"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-10",
+    "question_text": "Có trường hợp nào rule này không áp dụng dù điều kiện thông thường đã thỏa không?",
+    "required_information": "Rule exception"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-11",
+    "question_text": "Có actor hoặc trường hợp nào được phép override rule không?",
+    "required_information": "Override condition"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-12",
+    "question_text": "Nếu exception hoặc override xảy ra thì behavior mong đợi là gì?",
+    "required_information": "Exception / override behavior"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-13",
+    "question_text": "Làm thế nào để xác định rule đã được áp dụng đúng?",
+    "required_information": "Validation condition"
+  },
+  {
+    "module_code": "RULE",
+    "question_id": "RULE-Q-14",
+    "question_text": "Có rule nào chưa được xác nhận hoặc cần stakeholder khác quyết định không?",
+    "required_information": "Open rule issues"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-01",
+    "question_text": "Requirement này liên quan đến những đối tượng nghiệp vụ nào?",
+    "required_information": "Business entities"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-02",
+    "question_text": "Mỗi entity được sử dụng trong behavior hoặc process nào?",
+    "required_information": "Entity context"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-03",
+    "question_text": "Entity nào là đối tượng chính và entity nào liên quan?",
+    "required_information": "Primary / related entities"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-04",
+    "question_text": "Với mỗi entity, những thông tin nào cần được sử dụng hoặc lưu lại?",
+    "required_information": "Required attributes"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-05",
+    "question_text": "Thuộc tính nào bắt buộc và thuộc tính nào có thể không có?",
+    "required_information": "Mandatory / optional data"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-06",
+    "question_text": "Có giá trị, format hoặc range nào cần giới hạn không?",
+    "required_information": "Attribute constraints"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-07",
+    "question_text": "Dữ liệu này được lấy từ đâu hoặc do ai cung cấp?",
+    "required_information": "Data source"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-08",
+    "question_text": "Hệ thống hoặc bộ phận nào chịu trách nhiệm về dữ liệu này?",
+    "required_information": "Data ownership"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-09",
+    "question_text": "Nếu cùng một dữ liệu xuất hiện ở nhiều nguồn thì nguồn nào được dùng làm căn cứ?",
+    "required_information": "Source of truth"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-10",
+    "question_text": "Các entity có quan hệ với nhau như thế nào?",
+    "required_information": "Entity relationship"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-11",
+    "question_text": "Có giới hạn về số lượng hoặc quan hệ giữa các entity không?",
+    "required_information": "Relationship constraints"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-12",
+    "question_text": "Entity có những trạng thái nào ảnh hưởng đến behavior hoặc process?",
+    "required_information": "Entity state"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-13",
+    "question_text": "Điều gì làm entity chuyển từ trạng thái này sang trạng thái khác?",
+    "required_information": "State transition condition"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-14",
+    "question_text": "Điều kiện nào xác định dữ liệu là hợp lệ?",
+    "required_information": "Data validation"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-15",
+    "question_text": "Nếu dữ liệu thiếu hoặc không hợp lệ thì behavior mong đợi là gì?",
+    "required_information": "Invalid / missing data behavior"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-16",
+    "question_text": "Có trường hợp duplicate hoặc conflicting data cần xử lý không?",
+    "required_information": "Duplicate / conflict handling"
+  },
+  {
+    "module_code": "DATA",
+    "question_id": "DATA-Q-17",
+    "question_text": "Có nội dung dữ liệu nào chưa được xác nhận hoặc cần nguồn khác làm rõ không?",
+    "required_information": "Open data issues"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-01",
+    "question_text": "Những actor hoặc role nào liên quan đến behavior này?",
+    "required_information": "Relevant roles"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-02",
+    "question_text": "Mỗi role được phép thực hiện những thao tác nào?",
+    "required_information": "Allowed actions"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-03",
+    "question_text": "Có thao tác nào role không được phép thực hiện không?",
+    "required_information": "Restricted actions"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-04",
+    "question_text": "Quyền này áp dụng trên dữ liệu hoặc phạm vi nào?",
+    "required_information": "Access scope"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-05",
+    "question_text": "User được thao tác trên toàn bộ dữ liệu hay chỉ dữ liệu thuộc phạm vi của mình?",
+    "required_information": "Data scope"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-06",
+    "question_text": "Có giới hạn theo team, department, tenant, project hoặc phạm vi khác không?",
+    "required_information": "Scope restriction"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-07",
+    "question_text": "Quyền có thay đổi theo trạng thái hoặc điều kiện nào không?",
+    "required_information": "Permission condition"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-08",
+    "question_text": "Có trường hợp actor chỉ được thực hiện action khi thỏa điều kiện cụ thể không?",
+    "required_information": "Conditional permission"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-09",
+    "question_text": "Có rule nghiệp vụ nào quyết định quyền này không?",
+    "required_information": "Permission rule"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-10",
+    "question_text": "Một user có thể có nhiều role cùng lúc không?",
+    "required_information": "Role relationship"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-11",
+    "question_text": "Nếu nhiều role có quyền khác nhau thì quyền nào được áp dụng?",
+    "required_information": "Permission conflict / priority"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-12",
+    "question_text": "Có actor hoặc role nào được phép override quyền thông thường không?",
+    "required_information": "Override permission"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-13",
+    "question_text": "Nếu user không có quyền thì behavior mong đợi là gì?",
+    "required_information": "Unauthorized behavior"
+  },
+  {
+    "module_code": "PERM",
+    "question_id": "PERM-Q-14",
+    "question_text": "Có trường hợp permission chưa được xác nhận hoặc cần stakeholder khác quyết định không?",
+    "required_information": "Open permission issues"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-01",
+    "question_text": "Tình huống bất thường hoặc failure nào có thể xảy ra?",
+    "required_information": "Exception scenario"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-02",
+    "question_text": "Exception xảy ra tại behavior hoặc bước nào?",
+    "required_information": "Exception context"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-03",
+    "question_text": "Điều kiện nào làm exception phát sinh?",
+    "required_information": "Trigger / condition"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-04",
+    "question_text": "Khi exception xảy ra, hệ thống cần xử lý thế nào?",
+    "required_information": "Expected exception behavior"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-05",
+    "question_text": "User hoặc hệ thống khác cần nhận được kết quả/thông báo gì?",
+    "required_information": "Exception outcome"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-06",
+    "question_text": "Có dữ liệu hoặc trạng thái nào cần được cập nhật không?",
+    "required_information": "State / data impact"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-07",
+    "question_text": "Sau khi xử lý exception, flow tiếp tục, quay lại, tạm dừng hay kết thúc?",
+    "required_information": "Flow impact"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-08",
+    "question_text": "Có thể retry hoặc thực hiện lại action không?",
+    "required_information": "Retry / recovery behavior"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-09",
+    "question_text": "Có cần action thủ công hoặc stakeholder khác xử lý tiếp không?",
+    "required_information": "Manual follow-up"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-10",
+    "question_text": "Exception này có cần phân biệt theo mức độ hoặc loại không?",
+    "required_information": "Exception classification"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-11",
+    "question_text": "Có trường hợp nào cần escalation hoặc chuyển cho actor khác không?",
+    "required_information": "Escalation behavior"
+  },
+  {
+    "module_code": "EXC",
+    "question_id": "EXC-Q-12",
+    "question_text": "Có exception nào chưa có quyết định xử lý rõ ràng không?",
+    "required_information": "Open exception issues"
+  },
+  {
+    "module_code": "NFR",
+    "question_id": "NFR-Q-01",
+    "question_text": "Non-functional concern nào ảnh hưởng đến requirement hoặc behavior này?",
+    "required_information": "NFR category"
+  },
+  {
+    "module_code": "NFR",
+    "question_id": "NFR-Q-02",
+    "question_text": "Concern này áp dụng cho behavior, user, system hoặc condition nào?",
+    "required_information": "Applicability context"
+  },
+  {
+    "module_code": "NFR",
+    "question_id": "NFR-Q-03",
+    "question_text": "Concern này xuất phát từ business need, policy, technical constraint hay compliance requirement nào?",
+    "required_information": "Source / rationale"
+  },
+  {
+    "module_code": "NFR",
+    "question_id": "NFR-Q-04",
+    "question_text": "Target hoặc constraint cụ thể cần đáp ứng là gì?",
+    "required_information": "Target / constraint"
+  },
+  {
+    "module_code": "NFR",
+    "question_id": "NFR-Q-05",
+    "question_text": "Có threshold, limit, time window hoặc condition nào ảnh hưởng đến target không?",
+    "required_information": "Measurement condition"
+  },
+  {
+    "module_code": "NFR",
+    "question_id": "NFR-Q-06",
+    "question_text": "Có mức tối thiểu, mức mong muốn hoặc tolerance nào cần phân biệt không?",
+    "required_information": "Acceptance threshold"
+  },
+  {
+    "module_code": "NFR",
+    "question_id": "NFR-Q-07",
+    "question_text": "Kết quả cần được đo hoặc kiểm chứng như thế nào?",
+    "required_information": "Validation method"
+  },
+  {
+    "module_code": "NFR",
+    "question_id": "NFR-Q-08",
+    "question_text": "NFR này phụ thuộc vào system, integration, data, infrastructure hoặc policy nào khác không?",
+    "required_information": "NFR dependency"
+  },
+  {
+    "module_code": "NFR",
+    "question_id": "NFR-Q-09",
+    "question_text": "Có constraint hoặc decision nào chưa được xác nhận không?",
+    "required_information": "Open NFR issue"
+  }
+]
